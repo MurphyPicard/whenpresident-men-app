@@ -1,0 +1,11 @@
+<h2>
+  {{candidates.length}} Candidates
+</h2>
+
+{{#each candidates as |candidate index|}}
+<a href="/candidates/{{candidate._id}}">
+  <h3>{{candidate.name}} for president in {{candidate.year}}</h3>
+</a>
+{{/each}}
+
+<a href="/candidates/new">Create New Candidate</a>
